@@ -1,0 +1,66 @@
+* {margin:0; padding:0;}
+body{
+    width:100%;
+}
+#wrapper{
+    min-width: 1000px;
+    overflow-x: hidden;
+}
+#container{
+    width:1000px;
+    height:100%;
+    margin: 0px auto;
+}
+
+.header{
+    width:100%;
+    height:100%;
+    background:
+        url('img/bg-ben.png') no-repeat,
+        #000;
+    overflow-x: hidden;
+}
+.menu{
+    width:400px;
+    height:100px;
+    background:#fff;
+}
+.home-slide {
+    margin:100px;
+    width:400px;
+    color:#fff;   
+}
+
+.twitter-feed {
+    height:70px;
+    width:1000px;
+    background:#121a22;
+}
+
+@media screen and (min-width: 1001px) {
+    body {
+        //overflow-x: hidden;
+    }
+}
+
+.image-bar {
+    width:1400px; 
+    margin-left: -200px;
+}
+.image-bar-alles{
+    float:left;
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+}
+.image-bar img {
+    float:left;
+    display: block;
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+}
+    .image-bar img:hover {
+        filter: none;
+        -webkit-filter: grayscale(0);
+    }
