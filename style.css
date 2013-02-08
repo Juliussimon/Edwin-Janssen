@@ -5,6 +5,7 @@ body{
 }
 a{
     text-decoration:none;
+    color:#fff;
 }
 #container{
     width:1000px;
@@ -22,24 +23,39 @@ a{
 } 
 .logo{
     width:233px;
-    height:70px;    
+    height:70px; 
+    float:left;
 }
 .menu {
-    width:700px;
     height:70px;
+    line-height:70px;
     float:right;
-    color:#fff;  
+    color:#fff;
+    font-style:italic;
+    font-weight:100;
     background:#000;
 }
+.navlist li{
+    
+display: inline;
+list-style-type: none;
+padding-right: 50px;
+}
+.navlist li.active{
+    font-weight:600;   
+}
 .home-slide {
-    padding:100px 100px 100px 50px;
+    clear:both;
+    padding:70px 100px 100px 50px;
     width:400px;
     color:#fff; 
+    margin: 0 0 50px 0;
 }
 .home-slide p{
     font-size:16px;
     font-weight:100;
     padding-top:20px;
+    color:#b3b3b3;
 }
 a.lees-verder{
     height:33px;    
@@ -49,11 +65,21 @@ a.lees-verder{
     font-size:16px;
     color:#8e9fb1;
     font-weight:600;
+    float:left;
     
 }
-a.lees-verder img{
-    padding: 0 10px 0 0;
-    vertical-align:middle;
+a.lees-verder:hover{
+    color:#c9dcf0;
+}
+a.lees-verder .pijl {
+    float:left;
+    width:33px;
+    height:33px;
+    margin: 0 10px 0 0;
+    background: url("img/sprite.png");
+}
+    a.lees-verder:hover .pijl {
+    background-position: 0 33px;
 }
 h2{
     font-size:38px;
@@ -77,12 +103,30 @@ h2{
     margin-left: -200px;
 }
 .image-bar-alles{
+    font-style:italic;
+    font-size:28px;
+    font-weight:600;
+    text-align:center;
     float:left;
+    padding-top:30px;
     width: 200px;
-    height: 200px;
-    background-color: #000;
+    height: 170px;
+    background:#121a22;
+}
+    .pijl-alle{
+    margin:20px auto;
+    width:33px;
+    height:33px;
+    background: url("img/sprite.png");    
+}
+.image-bar-alles:hover{
+    background:#1d2935;   
 }
 .image-bar img {
+    opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
     float:left;
     display: block;
     filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
@@ -90,6 +134,7 @@ h2{
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
 }
     .image-bar img:hover {
+    opacity: 0.5;
         filter: none;
         -webkit-filter: grayscale(0);
     }
