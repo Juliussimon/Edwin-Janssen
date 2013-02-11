@@ -7,6 +7,7 @@ a{
     text-decoration:none;
     color:#fff;
 }
+
 #container{
     width:1000px;
     margin: 0 auto;
@@ -66,7 +67,11 @@ a.lees-verder{
     color:#8e9fb1;
     font-weight:600;
     float:left;
-    
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 a.lees-verder:hover{
     color:#c9dcf0;
@@ -112,29 +117,46 @@ h2{
     width: 200px;
     height: 170px;
     background:#121a22;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
+
     .pijl-alle{
     margin:20px auto;
     width:33px;
     height:33px;
     background: url("img/sprite.png");    
 }
+
 .image-bar-alles:hover{
     background:#1d2935;   
 }
+
 .image-bar img {
-    opacity: 1;
-   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
+    opacity: 0,5;
     float:left;
     display: block;
     filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
     filter: gray; /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
+
     .image-bar img:hover {
-    opacity: 0.5;
-        filter: none;
-        -webkit-filter: grayscale(0);
+    opacity: 1;
+    filter: none;
+    -webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-ms-filter: grayscale(0);
     }
